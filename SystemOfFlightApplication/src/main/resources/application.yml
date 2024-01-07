@@ -1,0 +1,48 @@
+
+
+server:
+  port: 8085
+ # servlet:
+  #  context-path: /api/integration
+api:
+  stripe:
+    key: sk_test_51OFbH5JUU99vUZxLIWakfDACv7vLBzSWEiYSnyklS3nhoZERTLXp0QFpWobHQ5lxqo2JXTTy2JzQ8W9BaMONu7sS00bkltfEC4
+
+
+
+servlet:
+  context-path: /api/integration
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/booking
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update
+
+main:
+  allow-circular-references: true
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: eminecetinn970@gmail.com
+    password: your-password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  spring:
+     jpa:
+      open-in-view: false
+
